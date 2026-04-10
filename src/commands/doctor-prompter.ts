@@ -9,7 +9,18 @@ import {
 import type { DoctorOptions } from "./doctor.types.js";
 import { guardCancel } from "./onboard-helpers.js";
 
-export type { DoctorOptions } from "./doctor.types.js";
+<<<<<<< HEAD
+export type DoctorOptions = {
+  workspaceSuggestions?: boolean;
+  yes?: boolean;
+  nonInteractive?: boolean;
+  deep?: boolean;
+  repair?: boolean;
+  force?: boolean;
+  generateGatewayToken?: boolean;
+  json?: boolean;
+};
+
 
 export type DoctorPrompter = {
   confirm: (params: Parameters<typeof confirm>[0]) => Promise<boolean>;
